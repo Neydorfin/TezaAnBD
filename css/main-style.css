@@ -1,0 +1,277 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+html{
+    width: 100%;
+    color: #f2f2f2;
+}
+
+body{
+    background-color: #1d4362;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+    background-color: #0a1721;
+    font-size: 20px;
+}
+
+h1{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #0a1721;
+    font-size: 20px;
+    color: #f2f2f2;
+}
+
+footer p{
+    font-size: 1.1em;
+}
+
+
+p{
+    text-align: center;
+    font-size:0.9em;
+    margin: 2%;
+}
+
+.month_cost, .month_venit, .chartCV{
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-select-none{
+    width: 90%;
+    margin: 5%;
+}
+
+table{
+    margin: 2% 0 2% 1%;
+    color: #f2f2f2;
+    font-size: 1.1em;
+    width: 55%;
+}
+
+.tableCalc{
+    width: 55%;
+    margin: 2% 1% 2% 1%;
+}
+
+.chart{
+    width: 40%;
+    margin: 2% 1% 2% 1%;
+}
+
+.calc{
+    font-size: 1em;
+    padding: .5% 1%;
+}
+
+#chartCostsTotal{
+    width:50%;
+    min-height: 400px;
+    margin: 2% 1% 2% 1%;
+    float: right;
+}
+
+th{
+    width: auto;
+    background-color: #0e4d70;
+    padding: 1%;
+}
+
+
+td{
+    width: 20%;
+    background-color: #04527D;
+    padding: 1%;
+    text-align: center;
+    justify-content: center;
+}
+
+#prev, #next, button{
+    font-size: 1.1em;
+    padding: .5% 1%;
+    background-color: #2b7dbc;
+    border: solid #0f5f94 2px;
+    border-radius: 10px;
+    color: aliceblue;
+    text-align: center;
+    transition: all 0.5s ease 0s;
+}
+
+#prev:hover, #next:hover, button:hover{
+    background-color: #2b628f;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+}
+
+caption{
+    text-align: left;
+    padding:0 1%;
+}
+
+.month_label{
+    padding: 0.5% 3%;
+    background-color: #3372a2;
+    border: solid #0f5f94 2px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    width: 300px;
+}
+
+.empty{
+    background-color: rgba(255, 255, 255, 0);
+}
+
+
+.ins{
+    float: right;
+}
+
+
+.cap{
+    margin: 1%;
+}
+.content{
+    width: 70%;
+    margin-left: 15%;
+}
+input{
+    width: 80%;
+    display: block;
+    padding: 0.275rem 0.55rem;
+    font-size: 1.2em;
+    background-color: #fff;
+    border: 1px solid #bdbdbd;
+    border-radius: 0.25rem;
+    margin: 0 5%;
+}
+
+
+.tableCalc td{
+    width: 20%;
+}
+
+
+.edit, .delete{
+    width: 50px;
+    background-color: rgb(252, 64, 64);
+    color: rgb(40, 40, 40);
+    border: solid 1px rgb(79, 79, 79);
+    font-size: 1.1em;
+    padding:5px;
+    border-radius: 50px
+}
+
+.edit{
+    background-color: rgb(64, 252, 64);
+}
+
+.delete:hover, .edit:hover{
+    background-color: rgb(64, 64, 64);
+}
+
+.inpdata,select{
+    text-align: center;
+    border-radius: 0;
+    border: none;
+    background-color: #04527D;
+    color: #f2f2f2;
+    padding: 5px 0;
+}
+select{
+    font-size: 1em;
+    width: 70%;
+}
+
+.inpdata:focus,select:focus{
+    background-color: #454545;
+    color: #f2f2f2;
+}
+.inpdata:hover,select:hover{
+    background-color: #454545;
+    color: #f2f2f2;
+}
+
+
+@media screen and (max-width:1200px) {
+    .month_cost, .month_venit, .chartCV{
+        display: block;
+        width: 100%;
+        justify-content: center;
+        margin: 0;
+    }
+    .chart, .venitChart{
+        width: 96%;
+        margin: 2%;
+        justify-content: center;
+        display: flex;
+    }
+    .user-select-none{
+        width: 90%;
+    }
+    table, .tableCalc, #chartCostsTotal{
+        width: 96%;
+        margin: 2%;
+    }
+
+    input{
+        width: 100%;
+        display: block;
+        padding: 0.175rem 0.50rem;
+        font-size: 1.1em;
+        background-color: #fff;
+        border: 1px solid #bdbdbd;
+        border-radius: 0.25rem;
+    }
+}
+
+@media screen and (max-width:800px)
+{
+    *{
+        font-size: .9em;
+    }
+    a{
+        font-size: .7em;
+    }
+    .delete, .edit{
+        width: 70%;
+        font-size: 0.7em;
+    }
+    select{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1100px)
+{
+    *{
+        font-size: 1.1rem;
+    }
+    a{
+        font-size: 1em;
+    }
+    .inpdata,select{
+        font-size: .8em;
+    }
+}

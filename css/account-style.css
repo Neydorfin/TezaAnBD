@@ -1,0 +1,154 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+html{
+    width: 100%;
+    color: #f2f2f2;
+}
+
+body{
+    background-color: #1d4362;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+    background-color: #0a1721;
+    font-size: 20px;
+}
+
+h1{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #0a1721;
+    font-size: 20px;
+    color: #f2f2f2;
+}
+
+footer p{
+    font-size: 1.2em;
+}
+
+button{
+    font-size: 1.2em;
+    border-radius: 50px;
+    background-color: #0a1721;
+    border: solid #f2f2f2 2px;
+    padding: 5px;
+    width: 50%;
+    color: aliceblue;
+    text-align: center;
+    transition: all 0.5s ease 0s;
+    float: left;
+    margin: 0 0 0 25%;
+}
+
+
+button:hover{
+    background-color: #2e6999;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+}
+
+p{
+    text-align: center;
+    font-size:0.9em;
+    margin: 2%;
+}
+
+.content{
+    width: 70%;
+    margin: 0 15%;
+    background-color: #133959;
+    justify-content: space-between;
+    text-align: center;
+    display: flex;
+    min-height: 720px;
+}
+
+.foto{
+    width: 50%;
+    display: block;
+}
+
+.foto img{
+    width: 70%;
+    height: auto;
+    margin: 15% 15% 0 15%;
+    cursor: pointer;    
+}
+
+.info{
+    width: 50%;
+}
+
+table{
+    margin: 15% 5%;
+    color: #f2f2f2;
+    font-size: 1.2em;
+    width: 90%;
+}
+
+
+td{
+    width: 50%;
+    background-color: #04527D;
+    padding: 2% 3%;
+    height: 10%;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .content{
+        display: block;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .foto, .info{
+        width: 90%;
+        margin: 5%;
+    }
+}
+
+.empty{
+    background-color: rgba(255, 255, 255, 0);
+}
+
+input, button{
+    font-size: 1.1em;
+    padding: 2%;
+    background-color: #2b7dbc;
+    border: solid #0f5f94 2px;
+    border-radius: 10px;
+    color: aliceblue;
+    text-align: center;
+    transition: all 0.5s ease 0s;
+}
+
+
+input:hover, button:hover{
+    background-color: #2b628f;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+}
+
+input{
+    margin-top: 2%;
+}
